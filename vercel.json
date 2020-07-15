@@ -1,0 +1,11 @@
+{
+  "env": {
+    "NEXT_PUBLIC__MAGIC_PUB_KEY": "@boost-magic-link-pkey"
+  },
+  "build": {
+    "env": {
+      "NEXT_PUBLIC__MAGIC_PUB_KEY": "@boost-magic-link-pkey"
+    }
+  },
+  "routes": [{ "src": "/home", "dest": "/" }]
+}
