@@ -29,9 +29,17 @@ var decodeMorse = {
     iioo: "z"
     }
 
+var dit = new Audio('../Sounds/DIT.mp3');
+var dah = new Audio('../Sounds/DAH.mp3');
+
 $('.textfield').keydown(function(e){
   if (e.keyCode === 73 || e.keyCode === 79) {
        morse.push(e.key);
+       if (e.keyCode === 73) {
+         dah.play();
+       } else if (e.keyCode === 79) {
+         dit.play();
+       }
    } else if (e.keyCode === 32) {
        temp = decodeMorse[morse.join('')];
        morse = [];
@@ -44,7 +52,12 @@ $('.textfield').keydown(function(e){
    } else if (e.keyCode === 13) {
        morse = [];
        temp = "";
-       decoded.push(" ");
+       decoded.push("|");
+   } else {
+     $('.section-heading').text('delete that and try "ooo iii ooo" !');
    }
 
 });
+
+
+//setTimeout(function(){alert('Only detects TYPED codes (it means no pasting in)... Hitting backspace will reset everything!');}, 2500);

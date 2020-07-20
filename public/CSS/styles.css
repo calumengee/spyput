@@ -21,15 +21,22 @@ padding: 1% 2%;
 .form {
 padding: 50px 20px;
 margin: 17px auto;
+text-decoration: none;
 }
 
 .textfield {
   width: 100%;
-  height: 100%;
+  height: 30vh;
   position: relative;
   display: blocks;
-  padding: 0 10px;
-  line-height: 5rem;
+  padding: 1.5rem 10px;
+  line-height: 1rem;
+  text-decoration:  none;
+  border-radius: 20px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }
 
 .navbar-brand {

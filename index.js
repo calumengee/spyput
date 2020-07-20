@@ -19,3 +19,8 @@ res.render('index');
 app.listen(process.env.PORT || 3000, function(){
 console.log('Port is running...');
 })
+
+app.post('/', function(req, res){
+  const msg = 'This content could be sensitive. For your protection, please discard after each use. {START} '+req.body.textarea+' {FINISH}';
+  res.send(msg);
+})
