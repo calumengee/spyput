@@ -26,7 +26,7 @@ $('.textfield').keydown(function(e){
    } else if (e.keyCode === 13) {
        morse = [];
        temp = "";
-       decoded.push("|");
+       decoded.push(" ");
    } else {
      $('.section-heading').text('delete that and try "ooo iii ooo" !');
    }
