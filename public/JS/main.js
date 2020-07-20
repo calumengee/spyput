@@ -24,6 +24,7 @@ $('.textfield').keydown(function(e){
        decoded = [];
        temp = '';
    } else if (e.keyCode === 13) {
+        e.preventDefault();
        morse = [];
        temp = "";
        decoded.push(" ");
