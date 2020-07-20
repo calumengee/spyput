@@ -7,6 +7,7 @@ var dit = new Audio('../Sounds/DIT.mp3');
 var dah = new Audio('../Sounds/DAH.mp3');
 
 $('.textfield').keydown(function(e){
+
   if (e.keyCode === 73 || e.keyCode === 79) {
        morse.push(e.key);
        if (e.keyCode === 73) {
@@ -23,8 +24,9 @@ $('.textfield').keydown(function(e){
        morse = [];
        decoded = [];
        temp = '';
+       $('.textfield').val('');
    } else if (e.keyCode === 13) {
-        e.preventDefault();
+       e.preventDefault();
        morse = [];
        temp = "";
        decoded.push(" ");
@@ -35,4 +37,4 @@ $('.textfield').keydown(function(e){
 });
 
 
-//setTimeout(function(){alert('Only detects TYPED codes (it means no pasting in)... Hitting backspace will reset everything!');}, 2500);
+setTimeout(function(){alert('Only detects TYPED codes (it means no pasting in)... Hitting backspace will reset everything!');}, 2500);
