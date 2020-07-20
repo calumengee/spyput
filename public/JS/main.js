@@ -1,33 +1,7 @@
 var morse = [];
 var decoded = [];
 var temp = '';
-var decodeMorse = {
-    oi:"a",
-    iooo:"b",
-    ioio: "c",
-    ioo: "d",
-    o: "e",
-    ooio: "f",
-    iio: "g",
-    oooo: "h",
-    oo: "i",
-    oiii: "j",
-    ioi: "k",
-    oioo: "l",
-    ii: "m",
-    io: "n",
-    iii: "o",
-    oiio: "p",
-    iioi: "cute",
-    oio: "r",
-    ooo: "s",
-    i: "t",
-    ooi: "u",
-    oooi: "v",
-    oii: "w",
-    ioii: "y",
-    iioo: "z"
-    }
+var decodeMorse = {oi:"a", iooo:"b",ioio: "c",ioo: "d",o: "e",ooio: "f",iio: "g",oooo: "h",oo: "i",oiii: "j",ioi: "k",oioo: "l",ii: "m",io: "n",iii: "o",oiio: "p",iioi: "q",oio: "r",ooo: "s",i: "t",ooi: "u",oooi: "v",oii: "w",iooi:"x",ioii: "y",iioo: "z",oioioi: ".",iiooii: ",",ooiioo: "?",iooio: "/",oiioio: "@",oiiii: "1",ooiii: "2",oooii: "3",ooooi: "4",ooooo: "5",ioooo: "6",iiooo: "7",iiioo: "8",iiiio: "9",iiiii: "0"}
 
 var dit = new Audio('../Sounds/DIT.mp3');
 var dah = new Audio('../Sounds/DAH.mp3');
